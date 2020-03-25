@@ -40,22 +40,21 @@ Things you may want to cover:
 |image|text||
 |body|text||
 |user_id|integer|null: false, foreign_key: true|
-|groups_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- has_many :groups
+- belongs_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text||
 |nickname|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+
 
 ### Association
 - has_many :group_users
 - has_many :users, through: :groups_users
-- belongs_to :,message
+- has_many :messages
 
 ## groups_usersテーブル
 
