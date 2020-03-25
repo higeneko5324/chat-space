@@ -48,8 +48,8 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image|text||
-|text|text||
+|body|text||
+|nickname|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
