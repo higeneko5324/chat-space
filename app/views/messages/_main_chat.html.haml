@@ -1,0 +1,41 @@
+.chat-main
+  .chat-main__group--info
+    .chat-main__group--info__current-user
+      Group-name
+      .chat-main__group--info__current-user__list
+        Member :
+        .chat-main__group--info__current-user__list__name
+          taro
+
+    .chat-main__group--info__edit
+      = link_to "#", class: "chat-main__group--info__edit-btn" do
+        Edit
+  .chat-main__message
+    .chat-main__message__list
+      .chat-main__message__list__name
+        test
+        .chat-main__message__list__name__days
+          2019/01/01(Mon) 17:43:01
+
+      .chat-main__message__list__comm
+        これはテスト
+      
+      .chat-main__message__list__name
+        test
+        .chat-main__message__list__name__days
+          2019/01/01(Mon) 17:43:01
+
+      .chat-main__message__list__comm
+        これはテスト
+  
+  .chat-main__form
+    .chat-main__form__text
+      .chat-main__form__text__input-box
+        %input.input-text{:name: "input-text", :placeholder: "type a message", :type: "text", :value: ""}
+        .chat-main__form__text__image
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "chat-main__form__text__image__file"}
+    .chat-main__form__send
+      = link_to "#", class: "chat-main__form__send__btn" do
+        Send
