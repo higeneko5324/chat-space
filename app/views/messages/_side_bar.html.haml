@@ -2,12 +2,12 @@
   .sidebar__username
     .sidebar__username__top-item
       .sidebar__username__top-item__name
-        higeneko
+        = current_user.name
       .sidebar__username__top-item__icons
         = link_to "#", class: "sidebar__username__top-item__icons__btn" do
           =icon('far', 'edit') 
-        = link_to "#", class: "sidebar__username__top-item__icons__btn" do
-          =icon('fas', 'cog')
+        = link_to edit_user_path(current_user) do
+          =icon('fas', 'cog', class: 'sidebar__username__top-item__icons__btn')
   
   .sidebar__list 
   
