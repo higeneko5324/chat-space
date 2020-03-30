@@ -47,11 +47,9 @@
  
    
     &__group{
-      height: 100%;
       width: 260px;
       margin: 0 20px;
-      color: #ffffff;
-      font-size: bold;
+     
       
   
      
@@ -61,11 +59,17 @@
       padding-top: 20px; 
       line-height: 5px;
       margin-bottom: 5px;
+      color: #ffffff;
+      font-size: bold;
+      
     }
     &__name__comm{
         font-size: 11px;
         padding-bottom: 40px;
+        color: #ffffff;
+        font-size: bold;
         
+
     }
 
    }
@@ -139,9 +143,9 @@
     .chat-main__form{
       background-color: #d2d2d2;
       padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
       &__text{
         background-color: #ffffff;
         align-items: center;
@@ -155,18 +159,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-        
-        
+        position: relative;              
       }
         &__image{
          
         &__file {
           display: none;
-
         }
-        
-      
         } 
       }
       &__send{
@@ -181,7 +180,7 @@
         font-weight: bold;
         &__btn{
           text-decoration: none;
-          color: #ffffff;
+        
         }
 
 
