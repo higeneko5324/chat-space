@@ -4,21 +4,20 @@
       .sidebar__username__top-item__name
         = current_user.name
       .sidebar__username__top-item__icons
-        = link_to "#", class: "sidebar__username__top-item__icons__btn" do
-          =icon('far', 'edit') 
+        = link_to new_group_path do
+          =icon('far', 'edit', class: 'sidebar__username__top-item__icons__btn') 
         = link_to edit_user_path(current_user) do
           =icon('fas', 'cog', class: 'sidebar__username__top-item__icons__btn')
   
   .sidebar__list 
-  
-    .sidebar__list__group
-      .sidebar__list__group__name
-        test
-      .sidebar__list__group__name__comm
-        メッセージなし
-    
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .sidebar__list__group
+            .sidebar__list__group__name
+              = group.name
+            .sidebar__list__group__name__comm
+              メッセージはまだありません。
+     
    
-      .sidebar__list__group__name
-        test
-      .sidebar__list__group__name__comm
-        メッセージなし
+      
