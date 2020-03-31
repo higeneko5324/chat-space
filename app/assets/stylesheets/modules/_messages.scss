@@ -47,11 +47,9 @@
  
    
     &__group{
-      height: 100%;
       width: 260px;
       margin: 0 20px;
-      color: #ffffff;
-      font-size: bold;
+     
       
   
      
@@ -61,11 +59,17 @@
       padding-top: 20px; 
       line-height: 5px;
       margin-bottom: 5px;
+      color: #ffffff;
+      font-size: bold;
+      
     }
     &__name__comm{
         font-size: 11px;
         padding-bottom: 40px;
+        color: #ffffff;
+        font-size: bold;
         
+
     }
 
    }
@@ -139,14 +143,20 @@
     .chat-main__form{
       background-color: #d2d2d2;
       padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      &__text{
-        background-color: #ffffff;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+
+      .new_message{
+        display: flex;
+
+      
+      .chat-main__form__text{
         align-items: center;
         width: 100%;
-
+       
+        
+       
         &__input-box{
         padding: 0 10px;
         height: 50px;
@@ -155,21 +165,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
-        
-        
+                  
       }
-        &__image{
-         
+        &__image{   
         &__file {
           display: none;
-
         }
-        
-      
         } 
       }
-      &__send{
+
+      .chat-main__form__send{
         font-size: 16px;
         width: 72px;
         height: 50px;
@@ -181,13 +186,11 @@
         font-weight: bold;
         &__btn{
           text-decoration: none;
-          color: #ffffff;
+        
         }
-
-
       } 
-
-
+     
+    }
 
     }
   }
