@@ -18,12 +18,13 @@
   .chat-main__form
     = form_for [@group, @message] do |f|
       .chat-main__form__text
-        .chat-main__form__text__input-box
-          =f.text_field :content, class: 'form__message', placeholder: 'type a message'
-          .chat-main__form__text__image
-            = f.label :image, class: 'input-box__image' do
-              = icon('fas', 'image', class: 'chat-main__form__text__image__icon')
-              = f.file_field :image, class: 'chat-main__form__text__image__file'
+        =f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        -# .chat-main__form__text__input-box
+          -# =f.text_field :content, class: 'form__message', placeholder: 'type a message'
+          -# .chat-main__form__text__image
+        = f.label :image, class: 'input-box__image' do
+          = icon('fas', 'image', class: 'chat-main__form__text__image__icon')
+          = f.file_field :image, class: 'chat-main__form__text__image__file'
       .chat-main__form__send
         = f.submit 'Send', class: 'chat-main__form__send__btn'
     
