@@ -2,8 +2,9 @@
   .chat-main__group--info
     .chat-main__group--info__current-user
       .chat-main__group--info__current-user__list__name
-        = @group.name
+        =  @group.name
       .chat-main__group--info__current-user__list
+        Member :
         - @group.group_users.each do |group|
           = group.user.name
 
@@ -24,5 +25,5 @@
               = icon('fas', 'image', class: 'chat-main__form__text__image__icon')
               = f.file_field :image, class: 'chat-main__form__text__image__file'
       .chat-main__form__send
-        = f.submit 'send', class: 'chat-main__form__send__btn'
+        = f.submit 'Send', class: 'chat-main__form__send__btn'
     
